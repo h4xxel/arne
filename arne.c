@@ -60,7 +60,7 @@ int main(int argc, char **argv) {
 	int t = 0;
 
 	for (;;) {
-		if(t%2) {
+		if(t&1) {
 			for (y = 0; y < h; y++)
 				for (x = 0; x < w; x++) {
 					//int mov0=x+y+cosine((2*sine(t/2))/10)+sine(360*x/100);
